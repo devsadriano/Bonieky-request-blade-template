@@ -20,4 +20,4 @@ public function index(Request $request) {
     echo "URL: ".$url; 
     return view('config');
 };
-
+c
