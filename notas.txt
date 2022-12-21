@@ -1,0 +1,23 @@
+
+
+controller request
+
+use illuminate\http\Request;
+
+nos usamos o request como parametro 
+(Request $request) aqui eu to dizendo q vou receber um parametro e esse parametro e dessa classe Request e as informaçõe svai estar dentro $request amorr
+o Request vai ter todas as informaçõe relacionadas a requisição 
+isso inclui cabeçalhos, valores que foram enviados via requisição ou via query string, arquivos q foram enviados tudo fica na classe Request
+exemplos p acessar essa requisição
+
+####################################################################
+exempo pra acessa url
+####################################################################
+
+public function index(Request $request) {
+    $url = $request->url();
+
+    echo "URL: ".$url; 
+    return view('config');
+};
+
